@@ -1,0 +1,236 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: lightslategray;
+    scroll-behavior: smooth;
+}
+
+.body-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hero-section {
+    width: 100%;
+    border-radius: 50px;
+    height: 90vh;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+/* Nav Section */
+.nav-section {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link, .dropdown-item {
+    color: whitesmoke;
+}
+
+.logo-section {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.logo-section img {
+    height: 40px;
+    width: auto;
+}
+
+.list-section {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (max-width: 992px) { 
+
+    .navbar-nav {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .fa-bars {
+        color: whitesmoke;
+    }
+
+    .dropdown-menu {
+        border: 0;
+        background-color: #ffffff00;
+        left: initial;
+        right: 0;
+        text-align: right;
+        left: initial;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-item:hover {
+        background-color: #ffffff00;
+        transform: scale(1.05);
+        color: #0056b3;
+    }
+
+    .list-section {
+        align-items: right;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .body-container {
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .hero-section {
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .nav-section {
+        height: 12%;
+    }
+
+    .logo-section {
+        padding-left: 25px;
+    }
+
+    .list-section {
+        padding-right: 25px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .dropdown {
+        right: 0;
+    }
+ }
+
+ @media (min-width: 993px) { 
+    .dropdown {
+        display: none ;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+ }
+
+ /* End of Nav Section */
+
+ /* Hero Main section */
+
+.main-section {
+    text-align: center;
+}
+
+.text-header {
+    font-size: 28px;
+    color: #0056b3;
+    padding: 10px;
+    margin-top: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-email {
+    font-size: 22px;
+    color: rgba(245, 245, 245, 0.9);
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-email-box {
+    font-size: 22px;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.text-email-box span {
+    padding: 5px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-email-box span:hover {
+    padding: 5px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: #212529;
+    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
+    transition-delay: 100ms;
+}
+
+.text-contact {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contact {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.box-contact a {
+    color: rgba(245, 245, 245, 0.6);
+}
+
+.box-contact a:hover {
+    color: rgba(245, 245, 245, 0.9);
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .main-section {
+        margin-top: 75px;
+    }
+
+    .text-header {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
