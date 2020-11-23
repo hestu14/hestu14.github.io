@@ -219,8 +219,8 @@ html, body {
 
 @media (max-width: 576px) {
     .content img {
-        height: 80%;
-        width: 80%;
+        height: 85%;
+        width: 85%;
         border-radius: 5px;
     }
 }
@@ -231,6 +231,6 @@ html, body {
     }
 
     .text-more {
-        margin-top: 50px;
+        margin-top: 75px;
     }
 }

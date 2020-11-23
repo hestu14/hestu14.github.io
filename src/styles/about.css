@@ -180,7 +180,7 @@ html, body {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     width: 50%;
 }
@@ -189,7 +189,7 @@ html, body {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
 }
