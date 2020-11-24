@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/home.css";
 
-import hestu_avatar from "../img/hestu_avatar.png"
-import hestu_logo from "../img/hestu_logo.svg"
+import hestu_avatar from "../img/hestu_avatar.png";
+import hestu_logo from "../img/hestu_logo.svg";
+import hestu_cv from "../assets/CV_Hestu_Prasetya.pdf";
 
 function Home() {
     return (
@@ -44,7 +45,7 @@ function Home() {
                             <div className="text-hello">Hello, I'm Hestu</div>
                             <div className="text-descripton">Front-End Web Developer &amp; UI/UX Enthusiast</div>
                             <div className="text-more">
-                                <a href="#resume-section"><span> Download my Resume
+                                <a href={hestu_cv}><span> Download my Resume
             </span></a> &nbsp;&nbsp;
           <Link to="/about"><a><span>More About Me &nbsp;<i className="fa fa-arrow-right" aria-hidden="true" />
                                 </span></a></Link>
