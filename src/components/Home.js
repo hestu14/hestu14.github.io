@@ -4,7 +4,7 @@ import "../styles/home.css";
 
 import hestu_avatar from "../img/hestu_avatar.png";
 import hestu_logo from "../img/hestu_logo.svg";
-import hestu_cv from "../assets/CV_Hestu_Prasetya.pdf";
+import hestu_cv from "../assets/CV_Hestu_Prasetya_FULL.pdf";
 
 function Home() {
     return (
