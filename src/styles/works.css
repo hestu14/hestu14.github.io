@@ -36,6 +36,10 @@ html, body {
     color: whitesmoke;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .logo-section {
     width: 20%;
     display: flex;
@@ -215,6 +219,14 @@ html, body {
     background-color: whitesmoke;
     color: #212529;
     transition-delay: 0.1s;
+}
+
+.slick-prev {
+    left: 10px
+}
+
+.slick-next {
+    right: 10px
 }
 
 @media (max-width: 576px) {

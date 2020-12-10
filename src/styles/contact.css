@@ -36,6 +36,10 @@ html, body {
     color: whitesmoke;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .logo-section {
     width: 20%;
     display: flex;
