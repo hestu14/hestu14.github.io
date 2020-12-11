@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 import hestu_logo from "../img/hestu_logo.svg"
 
@@ -57,7 +58,12 @@ function Works() {
     return (
         <div>
             {/* Hero Section */}
-            <div className="body-container container">
+            <motion.div className="body-container container"
+                initial={{ opacity: 0, x: '100vw' }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: '100vw' }}
+                transition={{ duration: 0.5 }}
+                >
                 <div className="hero-section">
                     {/* Navbar Section */}
                     <div className="nav-section">
@@ -91,7 +97,7 @@ function Works() {
                         <div className="responsive portfolio-container">
                             <Slider {...settings}>
                                 <div className="content">
-                                    <center><img src={work1}  alt="" srcSet /></center>
+                                    <center><img src={work1} alt="" srcSet /></center>
                                     <div className="content-title"> Landing Page bliis.id </div>
                                     <div className="content-hastag"> #html #css #bootstrap #flexbox #ui/ux </div>
                                     <div className="content-web">
@@ -100,7 +106,7 @@ function Works() {
                                     </div>
                                 </div>
                                 <div className="content">
-                                    <center><img src={work2}  alt="" srcSet /></center>
+                                    <center><img src={work2} alt="" srcSet /></center>
                                     <div className="content-title"> Simple B/W </div>
                                     <div className="content-hastag"> #html #css #javascript #bootstrap </div>
                                     <div className="content-web">
@@ -109,7 +115,7 @@ function Works() {
                                     </div>
                                 </div>
                                 <div className="content">
-                                    <center><img src={work3}  alt="" srcSet /></center>
+                                    <center><img src={work3} alt="" srcSet /></center>
                                     <div className="content-title"> Simple Movie Finder </div>
                                     <div className="content-hastag"> #react #bootstrap #javascript #api </div>
                                     <div className="content-web">
@@ -118,7 +124,7 @@ function Works() {
                                     </div>
                                 </div>
                                 <div className="content">
-                                    <center><img src={work4}  alt="" srcSet /></center>
+                                    <center><img src={work4} alt="" srcSet /></center>
                                     <div className="content-title"> Mini Currency </div>
                                     <div className="content-hastag"> #react #bootstrap #javascript #api </div>
                                     <div className="content-web">
@@ -145,7 +151,7 @@ function Works() {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
         </div>
     )
 }

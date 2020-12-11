@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import "../styles/about.css";
 
 import hestu_logo from "../img/hestu_logo.svg";
@@ -14,9 +15,16 @@ import corel_logo from "../img/corel.png"
 
 function About() {
     return (
-        <div>
+        <div
+
+        >
             {/* Hero Section */}
-            <div className="body-container container">
+            <motion.div className="body-container container"
+                initial={{ opacity: 0, x: '100vw' }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: '100vw' }}
+                transition={{ duration: 0.5}}
+            >
                 <div className="hero-section">
                     {/* Navbar Section */}
                     <div className="nav-section">
@@ -73,7 +81,7 @@ function About() {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
 
         </div >
     )
